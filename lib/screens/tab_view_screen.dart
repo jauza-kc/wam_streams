@@ -15,7 +15,6 @@ class TabViewScreen extends StatefulWidget {
 class _TabViewScreenState extends State<TabViewScreen> {
   @override
   Widget build(BuildContext context) {
-    // return Container(color: Colors.white);
     return MultiProvider(
         providers: [ChangeNotifierProvider(create: (_) => ProcessQueueViewModel())],
         child: DefaultTabController(
@@ -35,19 +34,12 @@ class _TabViewScreenState extends State<TabViewScreen> {
                         label: "Add",
                       ),
                       CustomTab(
-                        label: "List",
+                        label: "Queue",
                       ),
                     ],
                   ),
                 ),
-                body: const TabBarView(children: [
-                  AddToQueueScreen(
-                    title: '',
-                  ),
-                  ProcessListScreen(
-                    title: '',
-                  )
-                ]))));
+                body: const TabBarView(children: [AddToQueueScreen(), ProcessListScreen()]))));
   }
 }
 
