@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jamieauza/Desktop/wam_streams/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/jamieauza/Desktop/WAM/wam_streams/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/jamieauza/Desktop/wam_streams/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/jamieauza/Desktop/WAM/wam_streams/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
