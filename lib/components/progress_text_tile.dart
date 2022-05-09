@@ -23,12 +23,7 @@ class ProgressTextTile extends StatefulWidget {
 
   @override
   _ProgressTextTileState createState() => _ProgressTextTileState(
-      title: title,
-      subtitle1: subtitle1,
-      height: height,
-      onTap: onTap,
-      isFirst: isFirst,
-      isLast: isLast);
+      title: title, subtitle1: subtitle1, height: height, onTap: onTap, isFirst: isFirst, isLast: isLast);
 }
 
 class _ProgressTextTileState extends State<ProgressTextTile> with TickerProviderStateMixin {
@@ -90,25 +85,19 @@ class _ProgressTextTileState extends State<ProgressTextTile> with TickerProvider
             height: height ?? defaultHeight,
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 9.5, 20, 12.5),
-              child: Row(
-                children: [
-                  Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(title ?? "", style: const TextStyle(fontSize: 14, color: Colors.black)),
-                    const SizedBox(height: 2),
-                    Text(
-                      subtitle1 ?? "",
-                      style: const TextStyle(fontSize: 12, color: Colors.grey),
-                    ),
-                    const SizedBox(height: 1),
-                    SizedBox(
-                        width: 200,
-                        child: LinearProgressIndicator(
-                          value: progress,
-                          backgroundColor: Colors.grey,
-                        )),
-                  ]),
-                ],
-              ),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text(title ?? "", style: const TextStyle(fontSize: 14, color: Colors.black)),
+                const SizedBox(height: 5),
+                Text(
+                  subtitle1 ?? "",
+                  style: const TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+                const SizedBox(height: 5),
+                LinearProgressIndicator(
+                  value: progress,
+                  backgroundColor: Colors.grey,
+                ),
+              ]),
             )),
       ),
     );
