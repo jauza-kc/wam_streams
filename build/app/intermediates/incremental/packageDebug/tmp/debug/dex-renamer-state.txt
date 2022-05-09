@@ -1,0 +1,4 @@
+#Mon May 09 15:02:08 CDT 2022
+base.0=/Users/jamieauza/Desktop/wam_streams/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
